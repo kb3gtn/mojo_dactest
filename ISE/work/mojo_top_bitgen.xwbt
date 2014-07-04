@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/kb3gtn/sandbox/mojo_dactest/ISE/mojo_dactest/work/mojo_top.ncd
+OUTFILE=/home/kb3gtn/sandbox/mojo_dactest/ISE/mojo_dactest/work/mojo_top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/kb3gtn/sandbox/mojo_dactest/ISE/mojo_dactest/work
+LICENSE=WebPack
+USER_INFO=210326790_0_0_943

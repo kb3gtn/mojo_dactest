@@ -1,0 +1,54 @@
+NET "clk50m" TNM_NET = "clk50";
+TIMESPEC TS_clk = PERIOD "clk50" 50 MHz HIGH 50 %;
+
+NET "clk50m" LOC = P56;
+NET "rst_n" LOC = P38;
+# NET "cclk" LOC = P70;   # not used
+
+NET "led[0]" LOC = P134;
+NET "led[1]" LOC = P133;
+NET "led[2]" LOC = P132;
+NET "led[3]" LOC = P131;
+NET "led[4]" LOC = P127;
+NET "led[5]" LOC = P126;
+NET "led[6]" LOC = P124;
+NET "led[7]" LOC = P123;
+
+# simple external UART using IO Pins
+NET "serial_tx" LOC = P41;
+NET "serial_rx" LOC = P51;
+NET "serial_tx" IOSTANDARD = LVTTL;
+NET "serial_rx" IOSTANDARD = LVTTL;
+NET "serial_rx" PULLUP;
+
+# dac interface
+NET "dac_reset" LOC = P74;  #--  L74N_1
+NET "dac_sleep" LOC = P75;  #--  L74P_1
+NET "dac_mode" LOC = P78;   #--  L47N_1
+NET "dac_cmode" LOC = P79;  #--  L47P_1
+NET "dac_clk_p" LOC = P81;  #--  L46P_1
+NET "dac_clk_n" LOC = P80;  #--  L46N_1
+NET "dac_DB[0]" LOC = P82;  #--  L45N_1
+NET "dac_DB[1]" LOC = P83;  #--  L45P_1
+NET "dac_DB[2]" LOC = P84;  #--  L43N_1
+NET "dac_DB[3]" LOC = P85;  #--  L43P_1
+NET "dac_DB[4]" LOC = P87;  #--  L42N_1
+NET "dac_DB[5]" LOC = P88;  #--  L42P_1
+NET "dac_DB[6]" LOC = P92;  #--  L41N_1
+NET "dac_DB[7]" LOC = P93;  #--  L41P_1
+NET "dac_DB[8]" LOC = P94;  #--  L40N_1
+NET "dac_DB[9]" LOC = P95;  #--  L40P_1
+NET "dac_DB[10]" LOC = P97; #--  L34N_1
+NET "dac_DB[11]" LOC = P98; #--  L34P_1
+
+
+
+# PlanAhead Generated IO constraints 
+NET "rst_n" IOSTANDARD = LVCMOS25;
+NET "dac_cmode" SLEW = SLOW;
+NET "dac_cmode" IOSTANDARD = LVCMOS25;
+NET "dac_mode" IOSTANDARD = LVCMOS25;
+NET "dac_reset" IOSTANDARD = LVCMOS25;
+NET "dac_sleep" IOSTANDARD = LVCMOS25;
+NET "dac_clk_p" IOSTANDARD = BLVDS_25;
+NET "dac_clk_n" IOSTANDARD = BLVDS_25;
