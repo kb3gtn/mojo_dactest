@@ -1,0 +1,5 @@
+The notes at the bottom of the schmatic are incorrect. (See dac_test.vhd for correct settings)
+
+The AD9706 was using on the testboard here.  Pin compatible, only 12 bits instead of 14 bits depth.
+VHDL code here was written and tested with AD9706 device.  firmware can be changed to support 14bits fairly easily.
+
